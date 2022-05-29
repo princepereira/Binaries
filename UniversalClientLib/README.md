@@ -6,7 +6,7 @@ Universal client act as a client for all message buses (Eg: Nats,Kafka) and NosQ
 __How to use__:
 ```
 
-$ wget https://github.com/princepereira/Binaries/UniversalClientLib/raw/main/client
+$ wget https://github.com/princepereira/Binaries/raw/main/UniversalClientLib/client
 $ chmod +x client
 $ ./client -c <Type of server. Eg: Nats/Kafka/Etcd> -a <produce/consume> -i <Server IP> -p <Server Port> -t <Topics/Subjects> -m <PUT/Produce Message>
 
