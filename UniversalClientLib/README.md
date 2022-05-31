@@ -10,6 +10,14 @@ $ wget https://github.com/princepereira/Binaries/raw/main/UniversalClientLib/cli
 $ chmod +x client
 $ ./client -c <Type of server. Eg: Nats/Kafka/Etcd> -a <produce/consume> -i <Server IP> -p <Server Port> -t <Topics/Subjects> -m <PUT/Produce Message>
 
+In some ubuntu servers, the client is not running due to few lib missing. In that case use the following client:
+
+$ wget https://github.com/princepereira/Binaries/raw/main/UniversalClientLib/client
+$ mv client_without_kafka client
+$ chmod +x client
+$ ./client -c <Type of server. Eg: Nats/Kafka/Etcd> -a <produce/consume> -i <Server IP> -p <Server Port> -t <Topics/Subjects> -m <PUT/Produce Message>
+
+
 Nats Producer Eg: ./client -c Nats -a produce -i 127.0.0.1 -p 4222 -t test -m 'Hello World'
 
 Nats Consumer Eg: ./client -c Nats -a consume -i 127.0.0.1 -p 4222 -t "test1,test2"
