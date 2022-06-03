@@ -12,7 +12,7 @@ $ ./client -c <Type of server. Eg: Nats/Kafka/Etcd> -a <produce/consume> -i <Ser
 
 In some ubuntu servers, the client is not running due to few lib missing. In that case use the following client:
 
-$ wget https://github.com/princepereira/Binaries/raw/main/UniversalClientLib/client
+$ wget https://github.com/princepereira/Binaries/raw/main/UniversalClientLib/client_without_kafka client
 $ mv client_without_kafka client
 $ chmod +x client
 $ ./client -c <Type of server. Eg: Nats/Kafka/Etcd> -a <produce/consume> -i <Server IP> -p <Server Port> -t <Topics/Subjects> -m <PUT/Produce Message>
